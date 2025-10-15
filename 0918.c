@@ -33,7 +33,7 @@ int main(void) {
     printf("정수: ");
     scanf("%d", &n);
 
-    if(n > 0) 
+    if(n>0)
         printf("양수입니다.\n");
     else if(n < 0)
         printf("음수입니다.\n");
@@ -59,9 +59,11 @@ int main(void) {
     int sum = 0;                            // 총합
     int i = 1;
 
-    for(int j = 1; j <= n; j++) {
-        sum += j;
+    while(i <= n) {
+        sum += i;
+        i++;
     }
+
     printf("while-1부터 %d까지의 총합은 %d입니다.\n", n, sum);
 
     return 0;
